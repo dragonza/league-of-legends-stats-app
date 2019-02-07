@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './style/index.scss';
 import Routes from './containers/App/routes';
-
 import * as serviceWorker from './serviceWorker';
 // if (process.env.NODE_ENV !== 'production') {
 //   const {whyDidYouUpdate} = require('why-did-you-update')

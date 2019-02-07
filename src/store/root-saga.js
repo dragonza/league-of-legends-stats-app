@@ -1,6 +1,6 @@
 import { spawn } from 'redux-saga/effects';
-import KanbanSaga from '../containers/KanbanPage/kanban-saga';
+import DashBoardSaga from '../containers/HomePage/dashboard-saga';
 
 export default function* rootSaga() {
-  yield spawn(KanbanSaga);
+  yield spawn(DashBoardSaga);
 }

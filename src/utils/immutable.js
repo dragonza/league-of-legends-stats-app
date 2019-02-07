@@ -15,7 +15,6 @@ export function create(src, path, value, subPath) {
   const subPathArr = pathToArray(subPath);
   // if the path end is undefined means that the value is not existed in the Map
   if (!src.hasIn(pathArr)) {
-    console.log('map');
     return src.mergeIn(pathArr, value);
   }
 

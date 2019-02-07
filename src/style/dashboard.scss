@@ -1,0 +1,114 @@
+.container {
+  width: 800px;
+  font-size: 12px;
+}
+.match-item {
+  display: flex;
+  padding: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+  justify-content: space-between;
+
+  &.game-win {
+    background-color: #a3cfec;
+    border-color: #99b9cf;
+  }
+
+  &.game-lose {
+    background-color: #e2b6b3;
+    border-color: #cea7a7;
+  }
+}
+
+.game-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-result {
+  font-weight: bold;
+  &.game-win {
+    color: #1a78ae;
+  }
+
+  &.game-lose {
+    color: #c6443e;
+  }
+}
+
+
+.game-setting-info {
+  text-align: center;
+  width: 110px;
+}
+
+.game-champion-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spell-list, .rune-list {
+  display: flex;
+  flex-direction: column;
+
+  .spell-image {
+    margin-right: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
+.champion-image {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+}
+
+.summoner-item {
+  display: flex;
+  margin-bottom: 4px;
+
+  .summoner-name {
+    margin-left: 5px;
+    white-space: nowrap;
+    width: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.team-summoner-wrapper {
+  display: flex;
+}
+
+.item-list {
+  display: flex;
+  width: 160px;
+  flex-wrap: wrap;
+
+  .item-image {
+    margin-right: 3px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
+.match-kda, .champion-stats {
+  text-align: center;
+}
+.kda-detail {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.KDA {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.number-of-death {
+  color: #c6443e;
+}
