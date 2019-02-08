@@ -30,12 +30,12 @@ class DashBoard extends React.PureComponent {
 
   renderMatchResult = () => {
     if (this.props.loading) {
-      return <div>Loading...</div>;
+      return <div className="loading">Loading...</div>;
     }
 
     if (this.props.error) {
       return (
-        <div>{this.props.error.message}</div>
+        <div className="error">{this.props.error.message}</div>
       )
     }
     return (
@@ -48,7 +48,7 @@ class DashBoard extends React.PureComponent {
   render() {
     return (
       <div className="container">
-        <h1 className="text-center">League of Legends Stat</h1>
+        <h1 className="text-center container-header">League of Legends Stat</h1>
         <form onSubmit={this.handleInputSubmit}>
           <div className="form-group">
             <input
