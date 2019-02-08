@@ -39,7 +39,8 @@ function checkStatus(response) {
  * @return {object}           The response data
  */
 export default function request(url, options) {
-  return fetch(url, options)
+  const proxyurl = "https://cors-anywhere.herokuapp.com/";
+  return fetch(proxyurl + url, options)
     .then(checkStatus)
     .then(parseJSON);
 }
