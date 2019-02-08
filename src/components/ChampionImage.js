@@ -3,8 +3,8 @@ import React from "react";
 
 import { championsMapByKey } from "../containers/HomePage/staticData";
 const ChampionImage = ({ championId, size }) => {
-
   const champion = championsMapByKey[championId];
+  if (!champion) return null;
   const imageSize = size === 'large' ? '' : 'tiny_';
   const ratio = size === 'large' ? 1 : 2;
   const imageUrl = require(`../resources/images/${imageSize}${champion.image.sprite}`);

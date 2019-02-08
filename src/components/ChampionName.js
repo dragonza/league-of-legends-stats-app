@@ -4,6 +4,7 @@ import React from "react";
 import { championsMapByKey } from "../containers/HomePage/staticData";
 const ChampionName = ({ championId }) => {
   const champion = championsMapByKey[championId];
+  if (!champion) return null;
   return (
     <span>{champion.name}</span>
   );
